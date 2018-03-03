@@ -13,11 +13,14 @@ class FormatoHora {
     friend FormatoHora operator - (const FormatoHora &p1, const FormatoHora &p2);
 
 //Metodos de la clase FormatoHora.
-    public:
-        int h,m,s;
+
+public:
+    void validar();
+    int h,m,s;
+        FormatoHora();
         FormatoHora(int h, int m, int s);
-
-
+//To String Method
+        std::string to_String();
     };
 
 
